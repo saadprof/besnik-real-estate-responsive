@@ -277,14 +277,55 @@
                         <p>2 Bath</p>
                       </div>
                     </div>
-                    <button class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
+                    <button onclick="my_modal_1.showModal()" class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
                   </div>
                   <div>
                     <img class="w-10 p-1 bg-white hover:bg-blue-200 border rounded-lg transition-all" src="images/icons/heart.png" alt="">
                   </div>
                 </div>
               </div>
-            </div>
+            </div>   
+
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_1" class="modal">
+              <div class="modal-box">
+
+                <div class="carousel w-full">
+                  <div id="slide1" class="carousel-item relative w-full">
+                    <img src="images/property1.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide4" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide2" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide2" class="carousel-item relative w-full">
+                    <img src="images/property2.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide1" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide3" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide3" class="carousel-item relative w-full">
+                    <img src="images/property3.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide2" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide4" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide4" class="carousel-item relative w-full">
+                    <img src="images/property4.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide3" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide1" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
           </div>
 
           <div class="bg-white drop-shadow-md rounded border">
@@ -306,7 +347,7 @@
                         <p>2 Bath</p>
                       </div>
                     </div>
-                    <button class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
+                    <button class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]" onclick="my_modal_2.showModal()">View Details</button>
                   </div>
                   <div>
                     <img class="w-10 p-1 bg-white hover:bg-blue-200 border rounded-lg transition-all" src="images/icons/heart.png" alt="">
@@ -314,6 +355,48 @@
                 </div>
               </div>
             </div>
+
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_2" class="modal">
+              <div class="modal-box">
+
+                <div class="carousel w-full">
+                  <div id="slide5" class="carousel-item relative w-full">
+                    <img src="images/property1.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide8" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide6" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide6" class="carousel-item relative w-full">
+                    <img src="images/property2.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide5" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide7" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide7" class="carousel-item relative w-full">
+                    <img src="images/property3.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide6" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide8" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide8" class="carousel-item relative w-full">
+                    <img src="images/property4.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide7" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide5" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
+
           </div>
 
           <div class="bg-white drop-shadow-md rounded border">
@@ -335,7 +418,7 @@
                         <p>2 Bath</p>
                       </div>
                     </div>
-                    <button class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
+                    <button onclick="my_modal_3.showModal()" class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
                   </div>
                   <div>
                     <img class="w-10 p-1 bg-white hover:bg-blue-200 border rounded-lg transition-all" src="images/icons/heart.png" alt="">
@@ -343,6 +426,47 @@
                 </div>
               </div>
             </div>
+            
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_3" class="modal">
+              <div class="modal-box">
+
+                <div class="carousel w-full">
+                  <div id="slide9" class="carousel-item relative w-full">
+                    <img src="images/property1.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide12" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide10" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide10" class="carousel-item relative w-full">
+                    <img src="images/property2.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide9" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide11" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide11" class="carousel-item relative w-full">
+                    <img src="images/property3.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide10" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide12" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide12" class="carousel-item relative w-full">
+                    <img src="images/property4.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide11" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide9" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
           </div>
 
           <div class="bg-white drop-shadow-md rounded border">
@@ -364,7 +488,7 @@
                         <p>2 Bath</p>
                       </div>
                     </div>
-                    <button class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
+                    <button onclick="my_modal_4.showModal()" class="btn bg-[#2289FF] hover:bg-white text-white hover:text-[#2289FF] hover:border-[#2289FF]">View Details</button>
                   </div>
                   <div>
                     <img class="w-10 p-1 bg-white hover:bg-blue-200 border rounded-lg transition-all" src="images/icons/heart.png" alt="">
@@ -372,6 +496,49 @@
                 </div>
               </div>
             </div>
+
+            
+            <!-- Open the modal using ID.showModal() method -->
+            <dialog id="my_modal_4" class="modal">
+              <div class="modal-box">
+
+                <div class="carousel w-full">
+                  <div id="slide13" class="carousel-item relative w-full">
+                    <img src="images/property1.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide16" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide14" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide14" class="carousel-item relative w-full">
+                    <img src="images/property2.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide13" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide15" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide15" class="carousel-item relative w-full">
+                    <img src="images/property3.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide14" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide16" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div> 
+                  <div id="slide16" class="carousel-item relative w-full">
+                    <img src="images/property4.png" class="w-11/12 mx-auto" />
+                    <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 -bottom-5">
+                      <a href="#slide15" class="btn btn-circle bg-gray-400">❮</a> 
+                      <a href="#slide13" class="btn btn-circle bg-gray-400">❯</a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <form method="dialog" class="modal-backdrop">
+                <button>close</button>
+              </form>
+            </dialog>
+
           </div>
 
         </div>
